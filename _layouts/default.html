@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MT EL: {{ page.title }}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="{{ page.description }}">
+        <link href="assets/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="title">
+                <img src="assets/images/logo-square.png" alt="MT EL's logo">
+                MT EL Service
+            </div>
+            <nav>
+                <ul>
+                    {% for item in site.data.pages %}
+                    <li class="nav-item">
+                        <a href="{{ item.link }}" {% if page.url == item.link %} class="active-page" {% endif %}>{{ item.name }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </header>
+        <main>
+            {{ content }}
+        </main>
+        <footer>
+            <div class="footer-info">
+                <div class="company">
+                    <div class="title">
+                        <img src="assets/images/logo-square.png" alt="MT EL's logo">
+                        MT EL Service
+                    </div>
+                    <p>Beskrivning av företaget</p>
+                </div>
+                <div class="follow">
+                    <div class="text">
+                        Följ oss
+                    </div>
+                    <div class="links">
+                        <svg></svg>
+                        <svg></svg>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div>
+                        Kontakt
+                    </div>
+                    <p>+46 72 969 3731</p>
+                    <a href="mailto:mtelservice@outlook.com">mtelservice@outlook.com</a>
+                </div>
+            </div>
+            <p class="footer-copyright">
+                Copyright &copy; 2024 MT EL Service. Skapad av <a href="https://site.hardo.dev" target="_blank">Andreas Hård</a>
+            </p>
+        </footer>
+    </body>
+</html>

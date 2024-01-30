@@ -1,0 +1,4 @@
+body { margin: 0; }
+
+header .title { font-size: 2rem; }
+header .title img { width: 4rem; border-radius: 0.7rem; }
