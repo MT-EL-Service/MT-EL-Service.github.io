@@ -2,10 +2,6 @@
   link: /
   description: The start page for MT EL Service
 
-- name: Offert
-  link: /offer
-  description: 
-
 - name: Kontakt
   link: /contact
   description: Get in contact with MT EL Service
