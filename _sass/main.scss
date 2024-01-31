@@ -1,0 +1,12 @@
+:root {
+    --bg: #FBFBFE;
+    --text: #050316;
+    --primary: #F9B800;
+    --accent: #ECA24A;
+}
+
+body {
+    margin: 0;
+}
+
+@import "header.scss", "footer.scss"
