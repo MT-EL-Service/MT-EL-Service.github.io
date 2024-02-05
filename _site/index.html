@@ -20,7 +20,7 @@
                     MT EL Service
                 </div>
             </div>
-            <nav>
+            <nav class="nav">
                 <ul>
                     
                     <li class="nav-item">
@@ -120,5 +120,15 @@
         </footer>
     </body>
 
-    <script src="assets/js/main.js"></script>
+    <script>
+        var menu = document.querySelector(".menu");
+        var nav = document.querySelector(".nav");
+
+        menu.addEventListener("click", menuActivate);
+
+        function menuActivate() {
+            nav.classList.toggle("nav-active");
+            menu.classList.toggle("menu-active");
+        }
+    </script>
 </html>

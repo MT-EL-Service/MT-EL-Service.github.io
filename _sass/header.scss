@@ -1,10 +1,15 @@
 header {
+    --logo-size: 4rem;
+
+    height: fit-content;
+
     .title {
         display: grid;
+        grid-template-columns: var(--logo-size) auto;
 
         img, .menu {
-            width: 4rem;
-            height: 4rem;
+            width: var(--logo-size);
+            height: var(--logo-size);
 
             grid-column: 1;
             grid-row: 1;
@@ -20,6 +25,8 @@ header {
             flex-direction: column;
             visibility: visible;
             z-index: 2;
+
+            transition: transform 0.7s ease-in-out;
 
             &:hover {
                 cursor: pointer;
@@ -39,29 +46,31 @@ header {
         }
 
         .menu-active {
+            transform: rotate(360deg);
             :nth-child(1) {
-                transform: translatey(1rem) rotate(45deg);
+                transform: translatey(1.35rem) rotate(45deg);
             }
             :nth-child(2) {
                 opacity: 0;
             }
             :nth-child(3) {
-                transform: translateY(-1rem) rotate(-45deg);
+                transform: translateY(-1.35rem) rotate(-45deg);
             }
         }
 
         .title-text {
             grid-column: 2;
+            width: fit-content;
+            align-self: center;
         }
     }
 
     nav {
         width: 100%;
-        /*
-        transform: translateY(-);
         visibility: collapse;
-        */
         transition: all 1s ease-out;
+
+        position: absolute;
 
         ul {
             padding: 0;
@@ -136,5 +145,24 @@ header {
 }
 
 @media (min-width: 801px) {
-    header {}
+    header {
+        .title {
+            img {
+                visibility: visible;
+            }
+            
+            .menu {
+                visibility: hidden;
+            }
+
+            .title-text {
+                align-self: end;
+            }
+        }
+
+        nav {
+            transform: translateY(0%);
+            visibility: visible;
+        }
+    }
 }
