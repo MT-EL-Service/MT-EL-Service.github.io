@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/964ff18b-9a29-46cb-b9f6-2539507f6f6b/white-wire.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20240125%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20240125T165134Z&X-Amz-Expires=86400&X-Amz-Signature=94ef4f3b018bddcfe86a8791e91a9d875853a83d5bf9429059a599151b1cf206&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22white-wire.png%22&response-content-type=image%2Fpng&x-id=GetObject
