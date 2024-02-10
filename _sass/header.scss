@@ -1,7 +1,7 @@
 header {
     --logo-size: 4rem;
 
-    height: fit-content;
+    height: 0;
 
     .title {
         display: grid;
@@ -61,9 +61,10 @@ header {
         }
 
         .title-text {
+            visibility: collapse;
             grid-column: 2;
             width: fit-content;
-            align-self: center;
+            align-self: end;
             font-size: 2rem;
         }
     }
@@ -74,7 +75,7 @@ header {
         opacity: 0;
         transition: all 1s ease-out;
 
-        position: absolute;
+        position: fixed;
         height: 100vh;
 
         ul {
@@ -86,7 +87,7 @@ header {
                 display: block;
                 padding: 0 1rem 0 1rem;
                 position: relative;
-                padding-top: 2rem;
+                margin-top: 2rem;
 
                 border-bottom: solid 0.05rem;
 
@@ -135,13 +136,12 @@ header {
         visibility: visible;
         opacity: 1;
         transform: translateY(0%);
-        position: fixed;
         margin-top: -4rem;
     }
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     header {
         .title {
             .menu {
@@ -155,21 +155,24 @@ header {
             height: 100%;
 
             ul {
-                backdrop-filter: blur(0.5rem);
-
                 li {
                     border-image-slice: 1;
                     border-image-source: linear-gradient(to right, var(--primary), var(--accent));
+                    
+                    backdrop-filter: blur(0.5rem);
                 }
             }
         }
     }
 }
 
-@media (min-width: 801px) {
+@media (min-width: 1001px) {
     header {
         display: flex;
         flex-direction: row;
+        height: fit-content;
+        background-color: var(--accent);
+
         .title {
             img {
                 visibility: visible;
@@ -181,14 +184,37 @@ header {
             }
 
             .title-text {
-                align-self: end;
+                visibility: visible;
             }
         }
 
         nav {
-            transform: translateY(0%);
+            position: absolute;
+            left: 33%;
+            transform: translateY(30%);
             visibility: visible;
             opacity: 1;
+            height: fit-content;
+            width: fit-content;
+
+            ul {
+                margin: 0;
+
+                li {
+                    display: inline-block;
+                    margin: 0;
+                    border-bottom: none;
+                    ::after {
+                        height: 0.3rem;
+                    }
+
+                    a {
+                        font-size: 2rem;
+                        font-weight: 300;
+                        color: var(--text);
+                    }
+                }
+            }
         }
     }
 }
