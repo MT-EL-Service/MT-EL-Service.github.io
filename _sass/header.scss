@@ -6,7 +6,7 @@ header {
     .title {
         display: grid;
         grid-template-columns: var(--logo-size) auto;
-        column-gap: 1rem;
+        column-gap: 0.5rem;
         margin-left: 0.3rem;
 
         img, .menu {
