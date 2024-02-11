@@ -2,6 +2,7 @@ header {
     --logo-size: 4rem;
 
     height: 0;
+    z-index: 30;
 
     .title {
         display: grid;
@@ -26,7 +27,7 @@ header {
             display: flex;
             flex-direction: column;
             visibility: visible;
-            z-index: 2;
+            z-index: 4;
 
             transition: transform 0.7s ease-in-out;
 

@@ -3,11 +3,11 @@
 body { margin: 0; }
 body main { display: flex; flex-direction: column; align-items: center; }
 
-header { --logo-size: 4rem; height: 0; }
+header { --logo-size: 4rem; height: 0; z-index: 30; }
 header .title { display: grid; grid-template-columns: var(--logo-size) auto; column-gap: 0.5rem; margin-left: 0.3rem; }
 header .title img, header .title .menu { width: var(--logo-size); height: var(--logo-size); grid-column: 1; grid-row: 1; }
 header .title img { border-radius: 1rem; visibility: hidden; }
-header .title .menu { display: flex; flex-direction: column; visibility: visible; z-index: 2; transition: transform 0.7s ease-in-out; }
+header .title .menu { display: flex; flex-direction: column; visibility: visible; z-index: 4; transition: transform 0.7s ease-in-out; }
 header .title .menu:hover { cursor: pointer; }
 header .title .menu:hover div { background-color: var(--primary); }
 header .title .menu div { width: auto; height: 0.5rem; margin-top: auto; margin-bottom: auto; background-color: var(--accent); transition: transform 0.5s ease-in, opacity 0.3s linear, background-color 0.3s ease-in-out; }

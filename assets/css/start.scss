@@ -9,6 +9,7 @@
     background-size: cover;
     background-attachment: fixed;
     margin-bottom: 2rem;
+    z-index: -1;
 
     .text {
         display: flex;
@@ -22,7 +23,7 @@
 
         h1 {
             color: var(--primary);
-            margin-bottom: 0;
+            margin: 0;
             text-align: center;
             font-size: 5rem;
         }
