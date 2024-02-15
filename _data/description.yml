@@ -5,3 +5,7 @@ start: Vi är ett företag som erbjuder installation och underhåll av elanlägg
 
 kontakt: MT EL är baserat i <span>Vedevåg</span> och vi erbjuder tjänster i hela <span>Örebro län</span>.
 # ord omgivna av <span> blir en annan färg
+
+om:
+  top: <span>MT EL Service</span> är ett företag baserat i Vedevåg, som arbetar i hela Örebro län
+  botten: <span>MT EL Service</span> kan jobba både i bostäder och industrilokaler, och vid nödfall på helger och andra obekväma arbettider

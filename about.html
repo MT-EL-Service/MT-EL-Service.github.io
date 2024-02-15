@@ -1,0 +1,31 @@
+---
+layout: default
+title: Om oss
+---
+
+<head>
+    <link rel="stylesheet" href="assets/css/about.css">
+</head>
+
+<div class="top">
+    <div class="text">
+        <h1>Om oss</h1>
+    </div>
+</div>
+
+<div class="content">
+    <p>
+        {{ site.data.description.om.top }}
+    </p>
+    <div>
+        <p>Vi arbetar med:</p>
+        <ul>
+            {% for reason in site.data.reasons %}
+            <li>{{ reason }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <p>
+        {{ site.data.description.om.botten }}
+    </p>
+</div>
