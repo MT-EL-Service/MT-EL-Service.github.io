@@ -50,6 +50,7 @@
         img {
             border-radius: 1rem;
             max-width: 100%;
+            height: fit-content;
         }
 
         .text {
@@ -59,7 +60,7 @@
                 margin: 0;
             }
             p {
-                font-size: 2rem;
+                font-size: 1.5rem;
                 margin-top: 0;
                 margin-bottom: 0.5rem;
             }
@@ -178,7 +179,7 @@
     }
 }
 
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 1001px) {
     .content {
         .who {
             display: flex;
@@ -186,13 +187,13 @@
             .text {
                 margin-left: 2rem;
                 max-width: 50%;
-
-                p {
-                    font-size: 1.5rem;
-                }
             }
         }
+    }
+}
 
+@media screen and (min-width: 501px) {
+    .content {
         .follow {
             .links {
                 display: flex;

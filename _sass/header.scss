@@ -191,8 +191,8 @@ header {
 
         nav {
             position: absolute;
-            left: 33%;
-            transform: translateY(30%);
+            left: 50%;
+            transform: translateY(30%) translateX(-50%);
             visibility: visible;
             opacity: 1;
             height: fit-content;
